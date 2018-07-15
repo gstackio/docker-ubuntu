@@ -8,6 +8,7 @@ RUN locale-gen en_US.UTF-8 && \
     echo 'LANG="en_US.UTF-8"' > /etc/default/locale && \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get -y -q update && \
+    DEBIAN_FRONTEND=noninteractive apt-get -y -q upgrade -o Dpkg::Options::="--force-confnew" && \
     DEBIAN_FRONTEND=noninteractive apt-get -y install -o Dpkg::Options::="--force-confnew" \
     build-essential \
     software-properties-common \
