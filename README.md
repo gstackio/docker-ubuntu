@@ -1,15 +1,18 @@
 # Ubuntu Dockerfile
 
-A Dockerfile that produces a Docker Image for [Ubuntu](http://www.ubuntu.com/).
+A Dockerfile that produces a Docker Image for [Ubuntu][ubuntu] Trusty.
+
+[ubuntu]: http://www.ubuntu.com/
 
 ## Usage
 
 ### Build the image
 
-To create the image `frodenas/ubuntu`, execute the following command on the `docker-ubuntu` folder:
+To create the image `gstack/ubuntu-trusty`, execute the following command on
+the `docker-ubuntu-trusty` folder:
 
 ```
-$ docker build -t frodenas/ubuntu .
+$ docker build -t gstack/ubuntu-trusty .
 ```
 
 ### Run the image
@@ -17,9 +20,13 @@ $ docker build -t frodenas/ubuntu .
 To run the image:
 
 ```
-$ docker run -ti --rm --name ubuntu  frodenas/ubuntu
+$ docker run -ti --rm --name ubuntu  gstack/ubuntu-trusty
 ```
 
 ## Copyright
 
-Copyright (c) 2014 Ferran Rodenas. See [LICENSE](https://github.com/frodenas/docker-ubuntu/blob/master/LICENSE) for details.
+Copyright (c) 2014 Ferran Rodenas.
+Copyright (c) 2018 Benjamin Gandon.
+See [LICENSE][license] for details.
+
+[license]: https://github.com/gstackio/docker-ubuntu-trusty/blob/master/LICENSE
