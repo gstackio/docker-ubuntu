@@ -1,5 +1,7 @@
 FROM ubuntu:trusty
-MAINTAINER Ferran Rodenas <frodenas@gmail.com>
+LABEL "original-author"="Ferran Rodenas <frodenas@gmail.com>" \
+      maintainer="Benjamin Gandon" \
+      organization="Gstack"
 
 # Install utilities
 RUN locale-gen en_US.UTF-8 && \
